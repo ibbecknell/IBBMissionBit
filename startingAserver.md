@@ -25,6 +25,7 @@ python -m SimpleHTTPServer
 <b>5. Go to Google Chrome, type in: localhost:8000</b>
 
 <b>6. Your game should show up. </b>
+    
     hint: If you started your server inside of a folder that another folder is located, you will see a list of folders inside of that folder. Just select the game folder and your game should appear.
 
 <b>7. When you are done with your server, close it</b>
