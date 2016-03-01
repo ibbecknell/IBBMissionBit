@@ -1,6 +1,7 @@
 <h1>To start your server:</h1>
 
 <b>1. open your terminal</b>
+
 command + spacebar
 type in 'terminal'
 select the terminal
@@ -17,9 +18,14 @@ hint: if you mess up your terminal, or go into the wrong folder:
 python -m SimpleHTTPServer
 
 <b>4. You will see "Serving HTTP on 0.0.0.0 port 8000 ..." on the next line</b>
+
 hint: if you don't get this, you had a typo. Go back and retype the command in Step 3
 
 <b>5. Go to Google Chrome, type in: localhost:8000</b>
 
 <b>6. Your game should show up. </b>
+
 hint: If you started your server inside of a folder that another folder is located, you will see a list of folders inside of that folder. Just select the game folder and your game should appear.
+
+<b>7. When you are done with your server, close it</b>
+    Control + C
