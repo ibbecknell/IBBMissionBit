@@ -16,7 +16,8 @@
         'cd' to go all the way back to the beginning
 
 <b>3. When you get into the correct folder, start your server by typing:</b>
-python -m SimpleHTTPServer
+    
+    python -m SimpleHTTPServer
 
 <b>4. You will see "Serving HTTP on 0.0.0.0 port 8000 ..." on the next line</b>
 
@@ -29,4 +30,5 @@ python -m SimpleHTTPServer
     hint: If you started your server inside of a folder that another folder is located, you will see a list of folders inside of that folder. Just select the game folder and your game should appear.
 
 <b>7. When you are done with your server, close it</b>
+    
     Control + C
