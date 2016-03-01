@@ -23,7 +23,9 @@
 
     hint: if you don't get this, you had a typo. Go back and retype the command in Step 3
 
-<b>5. Go to Google Chrome, type in: localhost:8000</b>
+<b>5. Go to Google Chrome, type in:</b>
+
+    localhost:8000
 
 <b>6. Your game should show up. </b>
     
