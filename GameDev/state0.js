@@ -15,7 +15,6 @@ demo.state0.prototype = {
 	create: function(){
 		var tree = game.add.sprite(0, 0, 'trees');
 		adam = game.add.sprite(0, 450, 'adam');
-		adam.animations.add('walk', [0, 1, 2, 3, 4]);
 
 	},
 
