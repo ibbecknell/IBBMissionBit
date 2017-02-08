@@ -1,4 +1,5 @@
 Committing to Github using Github Desktop
+
 1. Open Github Desktop:
     a. Open from your taskbar
         OR
