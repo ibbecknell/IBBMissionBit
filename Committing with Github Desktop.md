@@ -1,9 +1,12 @@
 Committing to Github using Github Desktop
 
 1. Open Github Desktop:
-    a. Open from your taskbar
+   
+   a. Open from your taskbar
+        
         OR
-    b. press Command+SPACEBAR and type Github Desktop and it should pop up
+   
+   b. press Command+SPACEBAR and type Github Desktop and it should pop up
     
 2. At the top of the GitHub Desktop Window, there are two tabs: 
     a. "History"
