@@ -7,10 +7,11 @@
 - adding states to your game:
   - game.state.add("State_name1", state_name2);
   
+
 Note: make sure that state_name2 matches the var name in that State
 
 Note: to call that state from a different state:
-  game.state.start("State_name1");
+  - game.state.start("State_name1");
   
 
 - Start a state:
