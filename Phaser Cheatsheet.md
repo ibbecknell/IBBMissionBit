@@ -1,9 +1,11 @@
 - Creating a game object:
+  
   function(){
     var game = new Phaser.Game(320,480, Phaser.CANVAS, "game");
   }
   
 - adding states to your game:
+  
   game.state.add("State_name1", state_name2);
   
 Note: make sure that state_name2 matches the var name in that State
