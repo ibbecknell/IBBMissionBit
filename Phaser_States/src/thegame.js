@@ -9,22 +9,14 @@ var theGame = function(game){
 theGame.prototype = {
 	create: function(){
 		number = Math.floor(Math.random()*10);
-
 		spriteNumber = this.game.add.sprite(160,240,"numbers");
-
 		spriteNumber.anchor.setTo(0.5,0.5);
 		spriteNumber.frame = number;
-
-
 		var higherButton = this.game.add.button(160,100,"higher",this.clickedHigher,this);
 		higherButton.anchor.setTo(0.5,0.5);
-
-
 		var lowerButton = this.game.add.button(160,380,"lower",this.clickedLower,this);
 		lowerButton.anchor.setTo(0.5,0.5);	
 	},
-
-	
 	clickedHigher: function(){
 		higher = true;
 		this.tweenNumber(true);
