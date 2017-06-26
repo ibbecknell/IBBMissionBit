@@ -1,30 +1,30 @@
-- Creating a game object:
+-<strong> Creating a game object:</strong>
   
   - function(){
     var game = new Phaser.Game(320,480, Phaser.CANVAS, "game");
   }
   
-- adding states to your game:
+-<strong> adding states to your game:</strong>
   - game.state.add("State_name1", state_name2);
   
 
-Note: make sure that state_name2 matches the var name in that State
+<strong>Note:</strong> make sure that state_name2 matches the var name in that State
 
-Note: to call that state from a different state:
+<strong>Note:</strong> to call that state from a different state:
   - game.state.start("State_name1");
   
 
-- Start a state:
+-<strong> Start a state:</strong>
   - game.state.start("State_name");
 
 
-- Make a Prototype:
+-<strong> Make a Prototype:</strong>
   - state.prototype = {
     ...
    }
    
 
-- Make a function:
+-<strong> Make a function:</strong>
   - func_name : function(){
     ....
   },
@@ -34,24 +34,24 @@ Note: to call that state from a different state:
   
 
 
-- When having multiple functions, put a comma after each one except the last one.
+-<strong> When having multiple functions, put a comma after each one except the last one.</strong>
 
 
 
-- Loading an image:
+-<strong> Loading an image:</strong>
   - this.game.load.image("var_name","path_to_img");
  
-- Loading a spritesheet:
+-<strong> Loading a spritesheet:</strong>
   - this.game.load.spritesheet("var_name","path_to_img",x_frame_size, y_frame_size);
 
-- Adding a loading bar to your preload state:
+-<strong> Adding a loading bar to your preload state:</strong>
   - var loadingBar = this.add.sprite(x_location,y_location,"var_name");
   
-- Set a loading bar to visibly load on your game:
+-<strong> Set a loading bar to visibly load on your game:</strong>
   - this.load.setPreloadSprite(loadingBar);
   
-- Anchor a sprite:
+-<strong> Anchor a sprite:</strong>
   - var_name.anchor.setTo(x_location, y_location);
  
-- Add a button:
+-<strong> Add a button:</strong>
   - this.game.add.button(x_location, y_location, "var_name", button_action, this);
