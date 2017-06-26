@@ -1,4 +1,4 @@
--<strong> Creating a game object:</strong>
+-<strong> <u>Creating a game object:</u></strong>
   
   - function(){
     var game = new Phaser.Game(320,480, Phaser.CANVAS, "game");
