@@ -55,3 +55,34 @@
  
 -<strong> Add a button:</strong>
   - this.game.add.button(x_location, y_location, "var_name", button_action, this);
+  
+-<strong> Building a level (this goes in the create function):</strong>
+  - var level = [xxxxxxxxxx,
+                 x   o  i x,
+                 x     ii x,
+                 x i      x,
+                 x        x,
+                 xxxxxxxxxx,]
+-<strong> Displaying a level (this goes in the create function):</strong>
+  - for (var i = 0; i < level.length; i++) {
+            for (var j = 0; j < level[i].length; j++) {
+
+                if (level[i][j] == 'x') {
+                    var group_elem = this.game.add.sprite(30+20*j//pos relative to j, 30+20*i //pos relative to i, 'wall'//name of sprite that you preloaded);
+                    this.walls.add(wall); //add group_elem to group
+                    wall.body.immovable = true; //if this elem shouldn't move, make it immovable
+                }
+
+                // Create a coin and add it to the 'coins' group
+                else if (level[i][j] == 'o') {
+                    var coin = this.game.add.sprite(30+20*j, 30+20*i, 'coin');
+                    this.coins.add(coin);
+                }
+
+                // Create a enemy and add it to the 'enemies' group
+                else if (level[i][j] == 'i') {
+                    var enemy = this.game.add.sprite(30+20*j, 30+20*i, 'lava');
+                    this.lavas.add(enemy);
+                }
+            }
+        }
