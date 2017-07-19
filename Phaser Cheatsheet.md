@@ -62,9 +62,13 @@
                  x     ii x,
                  x i      x,
                  x        x,
-                 xxxxxxxxxx,]
+                 xxxxxxxxxx]
+ 
+                 
+              
 -<strong> Displaying a level (this goes in the create function):</strong>
-  - for (var i = 0; i < level.length; i++) {
+
+          for (var i = 0; i < level.length; i++) {
             for (var j = 0; j < level[i].length; j++) {
 
                 if (level[i][j] == 'x') {
