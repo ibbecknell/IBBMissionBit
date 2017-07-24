@@ -5,7 +5,18 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="hover_script.js"></script>
+        <script>
+                $('#thisiswhatiwanttohaveahover').hover(function() {
+                  if ($(this + ' .tooltip').hasClass('hidden')) {
+                    $(this + ' .tooltip').removeClass('hidden');
+                    $(this + ' .tooltip').addClass('visible');
+                  }
+                  if ($(this + ' .tooltip').hasClass('visible')) {
+                    $(this + ' .tooltip').removeClass('visible');
+                    $(this + ' .tooltip').addClass('hidden');
+                  }
+                });
+        </script>
         <style>
             table {
                 font-family: arial, sans-serif;
@@ -16,6 +27,14 @@
                 border: 1px solid #dddddd;
                 text-align: left;
                 padding: 8px;
+                
+            }
+            .visible {
+              display:block;
+            }
+
+            .hidden {
+              display:none;
             }
             tr:nth-child(even) {
                 background-color: #dddddd;
