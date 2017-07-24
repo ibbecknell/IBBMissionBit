@@ -5,19 +5,17 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script>
-                $('#thisiswhatiwanttohaveahover').hover(function() {
-                  if ($(this + ' .tooltip').hasClass('hidden')) {
-                    $(this + ' .tooltip').removeClass('hidden');
-                    $(this + ' .tooltip').addClass('visible');
-                  }
-                  if ($(this + ' .tooltip').hasClass('visible')) {
-                    $(this + ' .tooltip').removeClass('visible');
-                    $(this + ' .tooltip').addClass('hidden');
-                  }
-                });
-        </script>
         <style>
+            td span.tooltip{
+                display:none;
+            }
+            td:hover span.tooltip{
+                position:absolute; 
+                top:30; 
+                left:20px; 
+                display:inline; 
+                border:2px solid green;
+            }
             table {
                 font-family: arial, sans-serif;
                 border-collapse: collapse;
@@ -29,13 +27,7 @@
                 padding: 8px;
                 
             }
-            .visible {
-              display:block;
-            }
-
-            .hidden {
-              display:none;
-            }
+            
             tr:nth-child(even) {
                 background-color: #dddddd;
             }
@@ -61,8 +53,8 @@
 
             <tr>
                 <td>1</td>
-                <td><strong>HTML/CSS</strong> <br/> Project: create portfolio=> about me page</td>
-               <td id="thisiswhatiwanttohaveahover"><strong> HTML/CSS</strong> <br /> Project: begin Build Your Own Adventure Game and link to project<div class="tooltip hidden"><p>Pop up content #1</p></div></td>
+                <td><strong>HTML/CSS</strong> <br/> Project: create portfolio=> about me page <span class="tooltip">pop up content #1</span></td>
+                <td><strong> HTML/CSS</strong> <br /> Project: begin Build Your Own Adventure Game and link to project</td>
                 <td>Continue Adventure Game <br /> <strong>(9:00 - 11:30)</strong></td>
                 <td>Finish Adventure game, Present to class, <strong><br />Introduce JS concepts if you have time</strong></td>
                 <td>Introduce JS concepts <br /> Assign JS mini-project</td>
